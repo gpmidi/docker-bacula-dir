@@ -11,4 +11,6 @@ RUN  yum clean all \
     bacula-director bacula-console bacula-client bacula-libs-sql postgresql-libs \
     vim atop dstat
 
+EXPOSE 9101
+VOLUME ["/etc/bacula"]
 ENTRYPOINT ["/run.sh"]
