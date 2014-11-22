@@ -9,7 +9,7 @@ RUN  yum clean all \
   && yum update -y \
   && yum install -y \
     bacula-director bacula-console bacula-client bacula-libs-sql postgresql-libs \
-    vim atop dstat
+    vim atop dstat postgresql
 
 EXPOSE 9101
 VOLUME ["/etc/bacula"]
